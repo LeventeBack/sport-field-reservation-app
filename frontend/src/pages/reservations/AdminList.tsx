@@ -1,4 +1,3 @@
-import React from "react";
 import ReservationAdminTable from "../../components/reservation/ReservationAdminTable";
 import useReservations from "../../hooks/useReservations";
 import { Container } from "react-bootstrap";

@@ -32,7 +32,8 @@ const View = () => {
 
   useEffect(() => {
     if (showReservationModal) setShowReservationModal(false);
-  }, [success, setShowReservationModal]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [success]);
 
   useEffect(() => {
     if (!currentSportField) return;

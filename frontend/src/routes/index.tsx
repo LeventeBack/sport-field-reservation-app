@@ -115,7 +115,11 @@ const Routes = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <MainLayout children={<Outlet />} />,
+      element: (
+        <MainLayout>
+          <Outlet />
+        </MainLayout>
+      ),
       children: [
         ...routesForAnyUser,
         ...(!user ? routesForNotAuthenticatedOnly : []),

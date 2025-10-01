@@ -51,6 +51,7 @@ const ImageManagerCtxProvider = ({ children }: Props) => {
       const { message, data } = await uploadFile({
         ...formData,
         image: formData.image[0],
+        sportFieldId: Number(formData.sportFieldId),
       });
       setSuccess(message);
       updateImageList(data);

@@ -31,4 +31,6 @@ const SelectGroup = forwardRef(
   }
 );
 
+SelectGroup.displayName = "SelectGroup";
+
 export default SelectGroup;

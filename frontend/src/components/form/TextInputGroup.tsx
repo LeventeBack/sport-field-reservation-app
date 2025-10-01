@@ -27,4 +27,6 @@ const TextInputGroup = forwardRef(
   }
 );
 
+TextInputGroup.displayName = "TextInputGroup";
+
 export default TextInputGroup;

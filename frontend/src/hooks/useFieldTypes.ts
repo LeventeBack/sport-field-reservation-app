@@ -42,7 +42,7 @@ const useFieldTypes = () => {
 
   const deleteFieldType = async (id: number) => {
     clear();
-    const fields = sportFields.filter((field) => field.type.id === id);
+    const fields = sportFields.filter((field) => field.fieldTypeId === id);
     if (fields.length) {
       return setError("Cannot delete field type with associated fields");
     }
